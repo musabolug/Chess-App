@@ -1,0 +1,84 @@
+.tile{
+    height: 65px;
+    width: 65px;
+    place-content: center;
+    display: grid;
+    
+}
+
+.black{
+    background-color: #769656;
+    color: #eeeed2;
+}
+.white{
+color: #769656;
+background-color: #eeeed2;
+}
+
+.tile img{
+    width: 10px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+.positionY{
+
+    font-size: 25px;
+    margin-left: 5px;
+    width: 10px;
+    height: 65px;
+    display: flex;
+    /* justify-content: ; */
+    position: fixed;
+    font-weight: 600;
+}
+.positionX{
+    font-size: 20px;
+    display: block;
+    margin-left: 52px;
+    margin-top: 38px;
+    position: fixed;
+    font-weight: 500;
+
+}
+.tile .chessPiece{
+   margin-top: 10px;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px;
+}
+.tile .chessPiece:hover{
+    cursor: grab;
+}
+.tile .chessPiece:active{
+    cursor:grabbing
+}
+.active{
+    background-color: #baca2b !important
+}
+
+.hint{
+    /* width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%; */
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+.hint img{
+    position: absolute;
+    z-index: 2;
+    margin: 0px;
+    opacity: 0.6;
+    width: 45px;
+    height: 45px;
+}
